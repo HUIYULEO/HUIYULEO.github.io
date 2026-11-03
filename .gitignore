@@ -1,0 +1,7 @@
+node_modules/
+shots/
+v1/
+v2/
+package-lock.json
+shoot.js
+.DS_Store
