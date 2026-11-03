@@ -22,9 +22,11 @@
     </a>
     <nav class="nav" aria-label="Sections">
       <a href="#now" data-en="Now" data-zh="现在">Now</a>
+      <a href="#about" data-en="About" data-zh="关于">About</a>
       <a href="#work" data-en="Work" data-zh="作品">Work</a>
-      <a href="#path" data-en="Previously" data-zh="经历">Previously</a>
-      <a href="#links" data-en="Links" data-zh="链接">Links</a>
+      <a href="#notes" data-en="Notes" data-zh="笔记">Notes</a>
+      <a href="#path" data-en="Path" data-zh="经历">Path</a>
+      <a href="#connect" data-en="Connect" data-zh="联系">Connect</a>
     </nav>
     <div class="lang" role="group" aria-label="Language">
       <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
@@ -71,7 +73,9 @@
       <h2 data-en="Now" data-zh="现在">Now</h2>
     </div>
     <div class="sec-body">
-      <p class="lead" data-split="words" data-en="Back in China, exploring AI, robots, and hardware, and building a new personal life system with AI." data-zh="回国中，在探索 AI、机器人与硬件，也在用 AI 搭建新的个人生活系统。">Back in China, exploring AI, robots, and hardware, and building a new personal life system with AI.</p>
+      <p class="now-meta" data-en="Updated Nov 2026" data-zh="更新于 2026 年 11 月">Updated Nov 2026</p>
+      <p class="lead now-line" data-split="words" data-en="Exploring AI, robots and hardware" data-zh="在探索 AI、机器人和硬件">Exploring AI, robots and hardware</p>
+      <p class="lead now-line" data-split="words" data-en="Building a personal life system with AI" data-zh="在用 AI 搭建自己的生活系统">Building a personal life system with AI</p>
       <ul class="focus">
         <li><span class="sq sq-r"></span>AI</li>
         <li><span class="sq sq-y"></span><span data-en="Robots" data-zh="机器人">Robots</span></li>
@@ -80,14 +84,34 @@
     </div>
   </section>
 
+  <!-- ABOUT -->
+  <section class="section wrap reveal" id="about">
+    <div class="geo-rule" aria-hidden="true"><i class="g-c"></i><i class="g-s"></i><i class="g-t"></i></div>
+    <div class="sec-head">
+      <span class="num" aria-hidden="true"><span class="d"><span>0</span></span><span class="d"><span>2</span></span></span>
+      <h2 data-en="About" data-zh="关于">About</h2>
+    </div>
+    <div class="sec-body">
+      <p class="lead lead-sm" data-split="words" data-en="Engineer working across AI, robots and hardware. MSc Autonomous Systems, DTU; BEng Ocean Engineering, Zhejiang University." data-zh="工程师，关注 AI、机器人与硬件。DTU 自主系统硕士；浙江大学海洋工程本科。">Engineer working across AI, robots and hardware. MSc Autonomous Systems, DTU; BEng Ocean Engineering, Zhejiang University.</p>
+      <p class="body about-body" data-en="Previously Forward Deployed Data Scientist at Churney in Copenhagen, IT/OT at Novo Nordisk, and software testing at OPPO." data-zh="此前：哥本哈根 Churney 前线数据科学家；Novo Nordisk IT/OT；OPPO 软件测试。">Previously Forward Deployed Data Scientist at Churney in Copenhagen, IT/OT at Novo Nordisk, and software testing at OPPO.</p>
+      <ul class="about-facts">
+        <li><span class="af-label" data-en="Based" data-zh="所在">Based</span><span data-en="China" data-zh="中国">China</span></li>
+        <li><span class="af-label" data-en="Focus" data-zh="方向">Focus</span><span data-en="AI · robots · hardware" data-zh="AI · 机器人 · 硬件">AI · robots · hardware</span></li>
+        <li><span class="af-label" data-en="Education" data-zh="教育">Education</span><span>DTU · Zhejiang University</span></li>
+      </ul>
+    </div>
+  </section>
+
+
   <!-- WORK -->
   <section class="section wrap reveal" id="work">
     <div class="geo-rule" aria-hidden="true"><i class="g-c"></i><i class="g-s"></i><i class="g-t"></i></div>
     <div class="sec-head">
-      <span class="num" aria-hidden="true"><span class="d"><span>0</span></span><span class="d"><span>2</span></span></span>
+      <span class="num" aria-hidden="true"><span class="d"><span>0</span></span><span class="d"><span>3</span></span></span>
       <h2 data-en="Selected work" data-zh="作品">Selected work</h2>
     </div>
     <div class="sec-body">
+      <p class="work-intro" data-en="Public builds and ongoing experiments — linked where there is a repo." data-zh="公开作品与进行中的实验——有仓库的会给出链接。">Public builds and ongoing experiments — linked where there is a repo.</p>
       <div class="cards">
         <a class="card card-feature card-link" href="https://github.com/HUIYULEO/Outdoor_auto_pathplanning" target="_blank" rel="noopener">
           <div class="card-vis">
@@ -107,6 +131,11 @@
             <p class="kicker" data-en="MSc thesis · DTU" data-zh="硕士论文 · DTU">MSc thesis · DTU</p>
             <h3><span>Outdoor Autonomous Path Planning</span> <span class="ext" aria-hidden="true">↗</span></h3>
             <p class="desc" data-en="An end-to-end perception → planning → navigation pipeline for outdoor mobile robots: semantic segmentation, BEV projection, local path planning and real-time control. Deployed on DTU’s Terrain Hopper robot." data-zh="户外移动机器人的端到端感知 → 规划 → 导航系统：语义分割、BEV 鸟瞰投影、局部路径规划与实时控制，部署在 DTU 的 Terrain Hopper 机器人上。">An end-to-end perception → planning → navigation pipeline for outdoor mobile robots: semantic segmentation, BEV projection, local path planning and real-time control. Deployed on DTU’s Terrain Hopper robot.</p>
+            <ul class="pipe">
+              <li data-en="Perception — U-Net++ segmentation &amp; BEV" data-zh="感知 — U-Net++ 分割与 BEV">Perception — U-Net++ segmentation &amp; BEV</li>
+              <li data-en="Planning — corridor / midline &amp; pure pursuit" data-zh="规划 — 走廊 / 中线与纯追踪">Planning — corridor / midline &amp; pure pursuit</li>
+              <li data-en="Deployment — Terrain Hopper + RealSense D455" data-zh="部署 — Terrain Hopper + RealSense D455">Deployment — Terrain Hopper + RealSense D455</li>
+            </ul>
             <div class="card-foot">
               <ul class="tags"><li>Python</li><li>PyTorch</li><li>U-Net++</li><li>Intel RealSense</li></ul>
               <span class="status status-gh" data-en="Open source on GitHub" data-zh="GitHub 开源">Open source on GitHub</span>
@@ -146,6 +175,11 @@
             <p class="kicker" data-en="RAG · Engineering" data-zh="RAG · 工程">RAG · Engineering</p>
             <h3><span data-en="Warehouse Automation Design Review Assistant" data-zh="仓储自动化设计审查助手">Warehouse Automation Design Review Assistant</span> <span class="ext" aria-hidden="true">↗</span></h3>
             <p class="desc" data-en="A local, evidence-grounded RAG workspace for reviewing warehouse-automation supplier design documents against requirements. Every candidate finding cites a document version, section and page." data-zh="本地、基于证据的 RAG 工作台，用来对照需求审查仓储自动化供应商的设计文档；每条候选结论都引用到文档版本、章节和页码。">A local, evidence-grounded RAG workspace for reviewing warehouse-automation supplier design documents against requirements. Every candidate finding cites a document version, section and page.</p>
+            <ul class="pipe">
+              <li data-en="Knowledge control — requirements &amp; supplier docs" data-zh="知识管控 — 需求与供应商文档">Knowledge control — requirements &amp; supplier docs</li>
+              <li data-en="Review packages — frozen, citable scope" data-zh="审查包 — 冻结、可引用的范围">Review packages — frozen, citable scope</li>
+              <li data-en="Evidence chat &amp; finding matrix with citations" data-zh="证据对话与带引用的结论矩阵">Evidence chat &amp; finding matrix with citations</li>
+            </ul>
             <div class="card-foot">
               <ul class="tags"><li>FastAPI</li><li>Next.js</li><li>PostgreSQL</li><li>Milvus</li><li>Redis</li></ul>
               <span class="status status-gh" data-en="Open source on GitHub" data-zh="GitHub 开源">Open source on GitHub</span>
@@ -234,11 +268,99 @@
     </div>
   </section>
 
+
+  <!-- FOCUS -->
+  <section class="section wrap reveal" id="focus">
+    <div class="geo-rule" aria-hidden="true"><i class="g-c"></i><i class="g-s"></i><i class="g-t"></i></div>
+    <div class="sec-head">
+      <span class="num" aria-hidden="true"><span class="d"><span>0</span></span><span class="d"><span>4</span></span></span>
+      <h2 data-en="Focus" data-zh="方向">Focus</h2>
+    </div>
+    <div class="sec-body">
+      <p class="lead lead-sm" data-split="words" data-en="Four threads I keep coming back to." data-zh="我反复回到的四条线。">Four threads I keep coming back to.</p>
+      <ol class="layers">
+        <li class="layer">
+          <span class="layer-idx">01</span>
+          <div>
+            <h3 data-en="Robots &amp; perception" data-zh="机器人与感知">Robots &amp; perception</h3>
+            <p data-en="Outdoor navigation stacks: segmentation, bird’s-eye views, local planning, real-time control." data-zh="户外导航系统：分割、鸟瞰图、局部规划与实时控制。">Outdoor navigation stacks: segmentation, bird’s-eye views, local planning, real-time control.</p>
+          </div>
+        </li>
+        <li class="layer">
+          <span class="layer-idx">02</span>
+          <div>
+            <h3 data-en="AI systems" data-zh="AI 系统">AI systems</h3>
+            <p data-en="Evidence-grounded RAG and assistant workflows for engineering documents and review." data-zh="面向工程文档与审查的、基于证据的 RAG 与助手流程。">Evidence-grounded RAG and assistant workflows for engineering documents and review.</p>
+          </div>
+        </li>
+        <li class="layer">
+          <span class="layer-idx">03</span>
+          <div>
+            <h3 data-en="Personal systems" data-zh="个人系统">Personal systems</h3>
+            <p data-en="A life system run with AI assistants and Notion — planning, notes, routines." data-zh="用 AI 助手和 Notion 搭的个人生活系统：计划、笔记、日常。">A life system run with AI assistants and Notion — planning, notes, routines.</p>
+          </div>
+        </li>
+        <li class="layer">
+          <span class="layer-idx">04</span>
+          <div>
+            <h3 data-en="Hardware experiments" data-zh="硬件实验">Hardware experiments</h3>
+            <p data-en="Hands-on trials with robots and hardware, documented as I go." data-zh="动手做机器人与硬件的小实验，边做边记录。">Hands-on trials with robots and hardware, documented as I go.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- NOTES -->
+  <section class="section wrap reveal" id="notes">
+    <div class="geo-rule" aria-hidden="true"><i class="g-c"></i><i class="g-s"></i><i class="g-t"></i></div>
+    <div class="sec-head">
+      <span class="num" aria-hidden="true"><span class="d"><span>0</span></span><span class="d"><span>5</span></span></span>
+      <h2 data-en="Notes" data-zh="笔记">Notes</h2>
+    </div>
+    <div class="sec-body">
+      <a class="notes-strip" href="https://x.com/reoudotx_" target="_blank" rel="noopener">
+        <div class="notes-geo" aria-hidden="true">
+          <svg viewBox="0 0 280 120">
+            <path d="M210 20 L210 100 L130 100 A80 80 0 0 1 210 20 Z" fill="#E8B931"/>
+            <rect x="36" y="36" width="110" height="8" fill="#111"/>
+            <rect x="36" y="54" width="86" height="8" fill="#111"/>
+            <rect x="36" y="72" width="98" height="8" fill="#111"/>
+            <rect x="210" y="100" width="36" height="36" fill="#1F4E9C"/>
+            <rect x="36" y="96" width="12" height="12" fill="#D6402B"/>
+          </svg>
+        </div>
+        <div class="notes-copy">
+          <p class="kicker">@reoudotx_</p>
+          <h3 data-en="Notes on AI and building, on X." data-zh="在 X 上写 AI 与动手的笔记。">Notes on AI and building, on X.</h3>
+          <p class="notes-cta" data-en="Read on X" data-zh="去 X 阅读">Read on X <span aria-hidden="true">↗</span></p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="section wrap reveal" id="stack">
+    <div class="geo-rule" aria-hidden="true"><i class="g-c"></i><i class="g-s"></i><i class="g-t"></i></div>
+    <div class="sec-head">
+      <span class="num" aria-hidden="true"><span class="d"><span>0</span></span><span class="d"><span>6</span></span></span>
+      <h2 data-en="Stack" data-zh="工具">Stack</h2>
+    </div>
+    <div class="sec-body">
+      <p class="work-intro" data-en="Tools that show up in the public projects above." data-zh="出现在上面公开项目里的工具。">Tools that show up in the public projects above.</p>
+      <ul class="stack">
+        <li>Python</li><li>PyTorch</li><li>U-Net++</li><li>Intel RealSense</li>
+        <li>FastAPI</li><li>Next.js</li><li>PostgreSQL</li><li>Milvus</li><li>Redis</li>
+        <li>Docker</li><li>Notion</li><li>AI agents</li>
+      </ul>
+    </div>
+  </section>
+
   <!-- PATH -->
   <section class="section wrap reveal" id="path">
     <div class="geo-rule" aria-hidden="true"><i class="g-c"></i><i class="g-s"></i><i class="g-t"></i></div>
     <div class="sec-head">
-      <span class="num" aria-hidden="true"><span class="d"><span>0</span></span><span class="d"><span>3</span></span></span>
+      <span class="num" aria-hidden="true"><span class="d"><span>0</span></span><span class="d"><span>7</span></span></span>
       <h2 data-en="Previously" data-zh="经历">Previously</h2>
     </div>
     <div class="sec-body">
@@ -278,14 +400,18 @@
     </div>
   </section>
 
-  <!-- LINKS -->
-  <section class="section wrap reveal" id="links">
+  <!-- CONNECT -->
+  <section class="section wrap reveal" id="connect">
     <div class="geo-rule" aria-hidden="true"><i class="g-c"></i><i class="g-s"></i><i class="g-t"></i></div>
     <div class="sec-head">
-      <span class="num" aria-hidden="true"><span class="d"><span>0</span></span><span class="d"><span>4</span></span></span>
-      <h2 data-en="Links" data-zh="链接">Links</h2>
+      <span class="num" aria-hidden="true"><span class="d"><span>0</span></span><span class="d"><span>8</span></span></span>
+      <h2 data-en="Connect" data-zh="联系">Connect</h2>
     </div>
     <div class="sec-body">
+      <div class="connect-banner">
+        <p class="lead lead-sm" data-en="Find me online." data-zh="线上找到我。">Find me online.</p>
+        <p class="body" data-en="LinkedIn, GitHub and X are live. Email coming later." data-zh="LinkedIn、GitHub 和 X 可用，邮箱稍后补充。">LinkedIn, GitHub and X are live. Email coming later.</p>
+      </div>
       <div class="link-cards">
         <a class="lcard" href="https://www.linkedin.com/in/huiyu-lu-dtu/" target="_blank" rel="noopener">
           <span class="lcard-icon i-blue">
